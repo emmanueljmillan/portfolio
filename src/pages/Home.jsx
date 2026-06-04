@@ -7,39 +7,23 @@ import StarBorder from "../components/StarBorder"
 import { MdEmail } from "react-icons/md"
 import { ImLinkedin2 } from "react-icons/im"
 import { SiGithub } from "react-icons/si"
-import { useEffect, useState } from "react"
 
 function Home() {
-  const [isMobile, setIsMobile] = useState(false)
-
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768)
-    }
-
-    checkMobile()
-    window.addEventListener("resize", checkMobile)
-
-    return () => window.removeEventListener("resize", checkMobile)
-  }, [])
-
   return (
     <>
       <div className="hero">
-        {!isMobile && (
-          <div className="dither-layer">
-            <Dither
-              waveColor={[0.2980392156862745, 0.11372549019607843, 0.4666666666666667]}
-              disableAnimation={false}
-              enableMouseInteraction={false}
-              mouseRadius={0.3}
-              colorNum={9}
-              waveAmplitude={0.5}
-              waveFrequency={10}
-              waveSpeed={0.03}
-            />
-          </div>
-        )}
+        <div className="dither-layer">
+          <Dither
+            waveColor={[0.2980392156862745, 0.11372549019607843, 0.4666666666666667]}
+            disableAnimation={false}
+            enableMouseInteraction={false}
+            mouseRadius={0.3}
+            colorNum={9}
+            waveAmplitude={0.5}
+            waveFrequency={10}
+            waveSpeed={0.03}
+          />
+        </div>
 
         <div className="pixel-layer">
           <PixelTrail
@@ -134,12 +118,13 @@ function Home() {
               neurotechnology, and translational research. My background spans both
               industry and academia, with experience in Research and Development,
               Product Testing, Regulatory Affairs, and biomaterials neuroscience
-              research at the Miami Project to Cure Paralysis.
+              research <span className="highlight">Miami Project to Cure Paralysis</span>.
             </p>
 
             <p>
               I recently completed a Master's degree in{" "}
-              Neural Engineering at the University of Miami, where my thesis,{" "}
+              <span className="highlight">Neural Engineering</span> at the
+              University of Miami, where my thesis,{" "}
               <span className="highlight">
                 "Characterization of Nanoparticle Interactions in Peripheral Neural
                 Lesion Models"
