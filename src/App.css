@@ -835,8 +835,22 @@ body {
 @media (max-width: 768px) {
   .site-bg {
     background:
-      radial-gradient(circle at 25% 20%, rgba(55, 35, 160, 0.22), transparent 48%),
-      radial-gradient(circle at 80% 80%, rgba(25, 18, 75, 0.35), transparent 55%),
+      radial-gradient(circle at 25% 20%, rgba(45, 35, 150, 0.22), transparent 48%),
+      radial-gradient(circle at 80% 80%, rgba(20, 18, 75, 0.35), transparent 55%),
       linear-gradient(180deg, #07070d 0%, #050505 100%) !important;
+  }
+
+  .dither-layer,
+  .pixel-layer,
+  .about-pixel-layer,
+  .projects-pixel-layer,
+  .projects-page-pixel-layer,
+  .experience-page-pixel-layer,
+  .project-page-pixel-layer {
+    display: none !important;
+  }
+
+  .highlight {
+    background: rgba(120, 90, 255, 0.38);
   }
 }
