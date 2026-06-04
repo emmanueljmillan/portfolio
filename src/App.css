@@ -831,3 +831,12 @@ body {
     border-radius: 0 0 18px 18px;
   }
 }
+
+@media (max-width: 768px) {
+  .site-bg {
+    background:
+      radial-gradient(circle at 25% 20%, rgba(55, 35, 160, 0.22), transparent 48%),
+      radial-gradient(circle at 80% 80%, rgba(25, 18, 75, 0.35), transparent 55%),
+      linear-gradient(180deg, #07070d 0%, #050505 100%) !important;
+  }
+}
