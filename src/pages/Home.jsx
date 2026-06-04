@@ -134,13 +134,12 @@ function Home() {
               neurotechnology, and translational research. My background spans both
               industry and academia, with experience in Research and Development,
               Product Testing, Regulatory Affairs, and biomaterials neuroscience
-              research <span className="highlight">Miami Project to Cure Paralysis</span>.
+              research at the Miami Project to Cure Paralysis.
             </p>
 
             <p>
               I recently completed a Master's degree in{" "}
-              <span className="highlight">Neural Engineering</span> at the
-              University of Miami, where my thesis,{" "}
+              Neural Engineering at the University of Miami, where my thesis,{" "}
               <span className="highlight">
                 "Characterization of Nanoparticle Interactions in Peripheral Neural
                 Lesion Models"
