@@ -117,19 +117,14 @@ function Home() {
               I'm a passionate Neural Engineer with a strong interest in neuroscience,
               neurotechnology, and translational research. My background spans both
               industry and academia, with experience in Research and Development,
-              Product Testing, Regulatory Affairs, and biomaterials neuroscience
-              research <span className="highlight">Miami Project to Cure Paralysis</span>.
-            </p>
+              Product Testing, Regulatory Affairs, and biomaterials neuroscience research
+              at the Miami Project to Cure Paralysis</p>
 
             <p>
-              I recently completed a Master's degree in{" "}
-              <span className="highlight">Neural Engineering</span> at the
-              University of Miami, where my thesis,{" "}
-              <span className="highlight">
-                "Characterization of Nanoparticle Interactions in Peripheral Neural
-                Lesion Models"
-              </span>
-              , investigated nanoparticle-cell interactions in neuroinflammatory
+              I recently completed a Master's degree in Neural Engineering at 
+              the University of Miami, where my thesis, 
+              "Characterization of Nanoparticle Interactions in Peripheral Neural
+              Lesion Models," investigated nanoparticle-cell interactions in neuroinflammatory
               environments and their potential applications in neural repair.
             </p>
 
