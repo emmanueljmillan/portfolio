@@ -857,4 +857,31 @@ body {
     transform: none !important;
     margin-top: 2rem;
   }
+
+  .about {
+  padding: 6rem 6vw 4rem;
+}
+
+.about-content {
+  width: 100%;
+  max-width: none;
+  display: block;
+  padding: 1.25rem;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.about p {
+  max-width: none;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.about-card {
+  margin-top: 2rem;
+}
+
+.about-card .pc-card-wrapper,
+.about-card .pc-card {
+  max-width: 100%;
+}
 }
