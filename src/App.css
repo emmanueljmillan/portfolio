@@ -840,15 +840,14 @@ body {
       linear-gradient(180deg, #07070d 0%, #050505 100%) !important;
   }
 
-  .dither-layer,
-  .pixel-layer,
-  .about-pixel-layer,
-  .projects-pixel-layer,
-  .projects-page-pixel-layer,
-  .experience-page-pixel-layer,
-  .project-page-pixel-layer {
-    display: none !important;
-  }
+.pixel-layer,
+.about-pixel-layer,
+.projects-pixel-layer,
+.projects-page-pixel-layer,
+.experience-page-pixel-layer,
+.project-page-pixel-layer {
+  display: none !important;
+}
 
   .highlight {
     background: rgba(120, 90, 255, 0.38);
