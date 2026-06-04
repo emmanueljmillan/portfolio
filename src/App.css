@@ -877,11 +877,21 @@ body {
 }
 
 .about-card {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   margin-top: 2rem;
+  transform: none !important;
 }
 
-.about-card .pc-card-wrapper,
+.about-card .pc-card-wrapper {
+  width: min(320px, 100%) !important;
+  max-width: 320px !important;
+}
+
 .about-card .pc-card {
-  max-width: 100%;
+  width: 100% !important;
+  height: 420px !important;
+  max-height: 420px !important;
 }
 }
