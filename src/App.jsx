@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react"
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom"
-
 import GooeyNav from "./components/GooeyNav"
 import Home from "./pages/Home"
 import ProjectsPage from "./pages/Projects"
 import ExperiencePage from "./pages/Experience"
-
 import MastersThesis from "./pages/project-pages/masters-thesis"
 import AgingAndEventSegmentation from "./pages/project-pages/aging-and-event-segmentation"
 import GenomicSequenceModeling from "./pages/project-pages/genomic-sequence-modeling"
@@ -18,49 +16,6 @@ const items = [
   { label: "Projects", href: "/projects" },
   { label: "Experience", href: "/experience" },
 ]
-
-function Cursor() {
-  const [position, setPosition] = useState({ x: 0, y: 0 })
-  const [hovering, setHovering] = useState(false)
-
-  useEffect(() => {
-    const updateCursor = (e) => {
-      setPosition({
-        x: e.clientX,
-        y: e.clientY,
-      })
-    }
-
-    window.addEventListener("mousemove", updateCursor)
-
-    return () => {
-      window.removeEventListener("mousemove", updateCursor)
-    }
-  }, [])
-
-  useEffect(() => {
-    const handleMove = (e) => {
-      const target = e.target.closest("a, button")
-      setHovering(!!target)
-    }
-
-    document.addEventListener("mousemove", handleMove)
-
-    return () => {
-      document.removeEventListener("mousemove", handleMove)
-    }
-  }, [])
-
-  return (
-    <div
-      className={`custom-cursor ${hovering ? "cursor-hover" : ""}`}
-      style={{
-        left: position.x,
-        top: position.y,
-      }}
-    />
-  )
-}
 
 function NavBar() {
   const location = useLocation()
@@ -91,7 +46,6 @@ function NavBar() {
 function App() {
   return (
     <BrowserRouter>
-      <Cursor />
       <div className="site-bg" />
 
       <NavBar />

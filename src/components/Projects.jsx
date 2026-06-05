@@ -11,7 +11,6 @@ import {
   SiNumpy,
   SiReact
 } from "react-icons/si"
-import PixelTrail from "./PixelTrail"
 
 const toolIcons = {
   Arduino: <SiArduino />,
@@ -36,22 +35,6 @@ export default function Projects({ title = "Selected Works", showAll = false, pa
   const visibleProjects = showAll ? projects : projects.slice(0, 3)
   return (
     <section className="projects-section">
-      {!showAll && (
-        <div className="pixel-layer about-pixel-layer">
-        <PixelTrail
-          gradientColors={["#5227FF", "#dd94df", "#e9455b"]}
-          gridSize={100}
-          trailSize={0.015}
-          maxAge={200}
-          interpolate={2}
-          color="#5227FF"
-          gooeyFilter={{ id: "experience-page-goo-filter", strength: 1 }}
-          gooeyEnabled={false}
-          gooStrength={2}
-        />
-        </div>
-    )}
-
       <div className="projects-inner">
       <h2 className="section-title">{title}</h2>
 

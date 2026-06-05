@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: none !important;
 }
 
 html,
@@ -48,13 +47,23 @@ html {
 
 body {
   font-family: 'Space Grotesk', sans-serif;
-  cursor: none;
+}
+
+a,
+button,
+[role="button"],
+.project-link,
+.project-link-detail,
+.cv-button,
+.hero-links a {
+  cursor: pointer !important;
 }
 
 .site-bg {
   position: fixed;
   inset: 0;
   z-index: 0;
+  pointer-events: none;
   background:
     radial-gradient(circle at 30% 40%, rgba(120, 0, 255, 0.35), transparent 60%),
     radial-gradient(circle at 70% 70%, rgba(80, 0, 180, 0.25), transparent 50%),
@@ -69,6 +78,7 @@ body {
   z-index: 1000;
   width: fit-content;
   height: fit-content;
+  pointer-events: auto;
 }
 
 .dither-layer {
@@ -77,33 +87,6 @@ body {
   z-index: 1;
   opacity: 0.35;
   pointer-events: none;
-}
-
-.pixel-layer {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  pointer-events: auto;
-}
-
-.custom-cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  background-color: #5227ff;
-  border-radius: 10%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: 9999;
-}
-
-.custom-cursor.cursor-hover {
-  width: 20px;
-  height: 20px;
-  background: #dd94df;
-  border-radius: 10%;
 }
 
 .hero {
@@ -117,12 +100,13 @@ body {
   padding-right: 10vw;
   overflow: hidden;
   background: transparent;
+  pointer-events: auto;
 }
 
 .content {
   position: relative;
   z-index: 3;
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 .content h1 {
@@ -141,7 +125,7 @@ body {
   font-style: italic;
   letter-spacing: 3px;
   text-align: left;
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 .hero-links {
@@ -150,7 +134,7 @@ body {
   position: relative;
   margin-top: 3rem;
   z-index: 3;
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 .hero-links a {
@@ -168,6 +152,7 @@ body {
 
 .hero-links svg {
   font-size: 3rem;
+  pointer-events: none;
 }
 
 .hero-links img {
@@ -175,6 +160,7 @@ body {
   width: auto;
   object-fit: contain;
   filter: brightness(0) invert(1);
+  pointer-events: none;
 }
 
 .cv-button {
@@ -205,6 +191,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 20px;
   transition: color 0.25s ease, border-color 0.25s ease;
+  pointer-events: none;
 }
 
 .cv-button:hover .inner-content {
@@ -225,6 +212,7 @@ body {
   color: white;
   background: transparent;
   overflow: hidden;
+  pointer-events: auto;
 }
 
 .about-content {
@@ -236,7 +224,7 @@ body {
   grid-template-columns: minmax(650px, 1fr) 420px;
   column-gap: 5rem;
   align-items: center;
-  pointer-events: none;
+  pointer-events: auto;
   background: rgba(0, 0, 0, 0.45);
   padding: 2rem;
   border-radius: 18px;
@@ -244,7 +232,7 @@ body {
 
 .about-text {
   width: 100%;
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 .about .section-label,
@@ -279,7 +267,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  pointer-events: none;
+  pointer-events: auto;
   transform: translateX(-80px);
 }
 
@@ -292,7 +280,7 @@ body {
 .about-card .pc-card-shell,
 .about-card .pc-card,
 .about-card .pc-inside {
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 .projects-section,
@@ -302,6 +290,7 @@ body {
   padding: 8rem 10vw;
   color: white;
   overflow: hidden;
+  pointer-events: auto;
 }
 
 .projects-section {
@@ -310,7 +299,6 @@ body {
 
 .experience-section {
   z-index: 3;
-  pointer-events: none;
 }
 
 .projects-inner,
@@ -320,7 +308,7 @@ body {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  pointer-events: none;
+  pointer-events: auto;
   background: rgba(0, 0, 0, 0.45);
   padding: 1.5rem;
   border-radius: 18px;
@@ -343,6 +331,7 @@ body {
   flex-direction: column;
   padding: 2rem;
   border-radius: 18px;
+  pointer-events: auto;
 }
 
 .projects-list {
@@ -360,36 +349,21 @@ body {
 }
 
 .projects-page .dither-layer,
-.experience-page .dither-layer {
+.experience-page .dither-layer,
+.project-page .dither-layer {
   position: fixed;
   inset: 0;
   z-index: 0;
   pointer-events: none;
 }
 
-.projects-page-pixel-layer,
-.experience-page-pixel-layer {
-  position: fixed;
-  inset: 0;
-  z-index: 2;
-  pointer-events: auto;
-  opacity: 1;
-}
-
 .projects-page .projects-section {
   position: relative;
   z-index: 3;
-  pointer-events: none;
-}
-
-.projects-page .project-link {
   pointer-events: auto;
 }
 
-.projects-pixel-layer {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
+.projects-page .project-link {
   pointer-events: auto;
 }
 
@@ -399,6 +373,7 @@ body {
   gap: 0;
   align-items: start;
   min-height: 220px;
+  pointer-events: auto;
 }
 
 .project-image {
@@ -408,6 +383,7 @@ body {
   border-radius: 14px;
   position: relative;
   background: #050505;
+  pointer-events: auto;
 }
 
 .project-image::after {
@@ -445,6 +421,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
+  pointer-events: auto;
 }
 
 .project-content h3 {
@@ -493,6 +470,7 @@ body {
   gap: 12px;
   margin: -8px 0 14px;
   align-items: center;
+  pointer-events: auto;
 }
 
 .tool-icon {
@@ -504,6 +482,7 @@ body {
   font-size: 1.8rem;
   opacity: 0.85;
   transition: transform 0.2s ease, opacity 0.2s ease;
+  pointer-events: auto;
 }
 
 .tool-icon:hover {
@@ -515,6 +494,7 @@ body {
   max-width: 30px;
   max-height: 30px;
   object-fit: contain;
+  pointer-events: none;
 }
 
 .experience-card {
@@ -523,6 +503,7 @@ body {
   color: white;
   padding: 2.5rem 0;
   text-align: left;
+  pointer-events: auto;
 }
 
 .experience-card:first-child {
@@ -588,29 +569,9 @@ body {
   margin-top: 0.75rem;
 }
 
-
-/* =========================
-   PROJECT DETAIL PAGES
-========================= */
-
 .project-page {
   position: relative;
   min-height: 100vh;
-}
-
-.project-page .dither-layer {
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.project-page-pixel-layer {
-  position: fixed;
-  inset: 0;
-  z-index: 2;
-  pointer-events: auto;
-  opacity: 1;
 }
 
 .project-section {
@@ -620,7 +581,7 @@ body {
   padding: 8rem 10vw;
   color: white;
   overflow: hidden;
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 .project-inner {
@@ -629,7 +590,7 @@ body {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  pointer-events: none;
+  pointer-events: auto;
   background: rgba(0, 0, 0, 0.45);
   padding: 1.5rem;
   border-radius: 18px;
@@ -639,7 +600,7 @@ body {
   position: relative;
   z-index: 4;
   padding: 2rem;
-  pointer-events: none;
+  pointer-events: auto;
   text-align: left;
 }
 
@@ -779,8 +740,6 @@ body {
   }
 }
 
-/* MEDIA STUFF */
-
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
@@ -803,6 +762,7 @@ body {
 
   .cv-button {
     margin-top: 1rem;
+    pointer-events: auto;
   }
 
   .about-content {
@@ -832,12 +792,18 @@ body {
   }
 }
 
-@media (max-width: 900px), (max-height: 500px) {
+@media (max-width: 900px) {
   .site-bg {
     background:
       radial-gradient(circle at 25% 20%, rgba(45, 35, 150, 0.22), transparent 48%),
       radial-gradient(circle at 80% 80%, rgba(20, 18, 75, 0.35), transparent 55%),
       linear-gradient(180deg, #07070d 0%, #050505 100%) !important;
+  }
+
+  .projects-section,
+  .experience-section,
+  .project-section {
+    padding-top: 10rem;
   }
 
   .highlight {
@@ -848,88 +814,14 @@ body {
     transform: none !important;
     margin-top: 2rem;
   }
-
-  .about {
-    padding: 6rem 6vw 4rem;
-  }
-
-  .about-content {
-    width: 100%;
-    max-width: none;
-    display: block;
-    padding: 1.25rem;
-    background: rgba(0, 0, 0, 0.45);
-  }
-
-  .about p {
-    max-width: none;
-    font-size: 0.9rem;
-    line-height: 1.65;
-  }
-
-  .about-card {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 2rem;
-    transform: none !important;
-  }
-
-  .about-card .pc-card-wrapper {
-    width: min(320px, 100%) !important;
-    max-width: 320px !important;
-  }
-
-  .about-card .pc-card {
-    width: 100% !important;
-    height: 420px !important;
-    max-height: 420px !important;
-  }
-
-  .projects-section {
-    padding: 6rem 6vw 4rem;
-  }
-
-  .projects-inner {
-    padding: 1.25rem;
-    border-radius: 18px;
-    background: rgba(0, 0, 0, 0.45);
-  }
-
-  .projects-list {
-    padding: 0;
-  }
-
-  .project-content {
-    padding: 1rem 0 0;
-  }
-
-  .project-content p {
-    max-width: none;
-  }
-}
-
-/* Hide PixelTrail on real touch devices only */
-@media (max-width: 900px) and (hover: none) and (pointer: coarse),
-       (max-height: 500px) and (hover: none) and (pointer: coarse) {
-  .pixel-layer,
-  .about-pixel-layer,
-  .projects-pixel-layer,
-  .projects-page-pixel-layer,
-  .experience-page-pixel-layer,
-  .project-page-pixel-layer {
-    display: none !important;
-  }
 }
 
 @media (hover: none) and (pointer: coarse) {
   * {
     cursor: auto !important;
   }
+
   body {
     cursor: auto !important;
-  }
-  .custom-cursor {
-    display: none !important;
   }
 }

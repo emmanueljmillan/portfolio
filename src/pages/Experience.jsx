@@ -1,5 +1,4 @@
 import Dither from "../components/Dither"
-import PixelTrail from "../components/PixelTrail"
 import experience from "../data/experience"
 
 function Experience() {
@@ -15,20 +14,6 @@ function Experience() {
           waveAmplitude={0.5}
           waveFrequency={6}
           waveSpeed={0.015}
-        />
-      </div>
-
-      <div className="pixel-layer experience-page-pixel-layer">
-        <PixelTrail
-          gradientColors={["#5227FF", "#dd94df", "#e9455b"]}
-          gridSize={100}
-          trailSize={0.015}
-          maxAge={200}
-          interpolate={2}
-          color="#5227FF"
-          gooeyFilter={{ id: "experience-page-goo-filter", strength: 1 }}
-          gooeyEnabled={false}
-          gooStrength={2}
         />
       </div>
 
