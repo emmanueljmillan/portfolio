@@ -111,7 +111,7 @@ function Home() {
           <div className="about-card">
             <ProfileCard
               name="Emmanuel Millan"
-              title="Neuroengineer"
+              title="Neural Engineer"
               handle="emmanueljmillan"
               status="p ~ 0.050001"
               contactText="Say Hi!"
