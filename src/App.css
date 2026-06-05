@@ -766,9 +766,21 @@ button,
   }
 
   .about-content {
-    grid-template-columns: 1fr;
-    row-gap: 3rem;
+    width: 100%;
+    max-width: none;
+    display: block;
     padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.45);
+    overflow: visible;
+  }
+
+  .about-text {
+    width: 100%;
+    max-width: none;
+  }
+
+  .about-text p {
+    max-width: none;
   }
 
   .about-card {
