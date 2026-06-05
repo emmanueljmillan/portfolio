@@ -909,7 +909,9 @@ body {
   }
 }
 
-@media (hover: none) and (pointer: coarse) {
+/* Hide PixelTrail on real touch devices only */
+@media (max-width: 900px) and (hover: none) and (pointer: coarse),
+       (max-height: 500px) and (hover: none) and (pointer: coarse) {
   .pixel-layer,
   .about-pixel-layer,
   .projects-pixel-layer,
