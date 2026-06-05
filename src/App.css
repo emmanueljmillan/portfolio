@@ -840,15 +840,6 @@ body {
       linear-gradient(180deg, #07070d 0%, #050505 100%) !important;
   }
 
-  .pixel-layer,
-  .about-pixel-layer,
-  .projects-pixel-layer,
-  .projects-page-pixel-layer,
-  .experience-page-pixel-layer,
-  .project-page-pixel-layer {
-    display: none !important;
-  }
-
   .highlight {
     background: rgba(120, 90, 255, 0.38);
   }
@@ -859,60 +850,72 @@ body {
   }
 
   .about {
-  padding: 6rem 6vw 4rem;
+    padding: 6rem 6vw 4rem;
+  }
+
+  .about-content {
+    width: 100%;
+    max-width: none;
+    display: block;
+    padding: 1.25rem;
+    background: rgba(0, 0, 0, 0.45);
+  }
+
+  .about p {
+    max-width: none;
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+
+  .about-card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+    transform: none !important;
+  }
+
+  .about-card .pc-card-wrapper {
+    width: min(320px, 100%) !important;
+    max-width: 320px !important;
+  }
+
+  .about-card .pc-card {
+    width: 100% !important;
+    height: 420px !important;
+    max-height: 420px !important;
+  }
+
+  .projects-section {
+    padding: 6rem 6vw 4rem;
+  }
+
+  .projects-inner {
+    padding: 1.25rem;
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.45);
+  }
+
+  .projects-list {
+    padding: 0;
+  }
+
+  .project-content {
+    padding: 1rem 0 0;
+  }
+
+  .project-content p {
+    max-width: none;
+  }
 }
 
-.about-content {
-  width: 100%;
-  max-width: none;
-  display: block;
-  padding: 1.25rem;
-  background: rgba(0, 0, 0, 0.55);
-}
-
-.about p {
-  max-width: none;
-  font-size: 0.9rem;
-  line-height: 1.65;
-}
-
-.about-card {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 2rem;
-  transform: none !important;
-}
-
-.about-card .pc-card-wrapper {
-  width: min(320px, 100%) !important;
-  max-width: 320px !important;
-}
-
-.about-card .pc-card {
-  width: 100% !important;
-  height: 420px !important;
-  max-height: 420px !important;
-}
-
-.projects-section {
-  padding: 6rem 6vw 4rem;
-}
-
-.projects-inner {
-  padding: 1.25rem;
-  border-radius: 18px;
-}
-
-.projects-list {
-  padding: 0;
-}
-
-.project-content {
-  padding: 1rem 0 0;
-}
-
-.project-content p {
-  max-width: none;
-}
+@media (hover: none) and (pointer: coarse) {
+  .pixel-layer,
+  .about-pixel-layer,
+  .projects-pixel-layer,
+  .projects-page-pixel-layer,
+  .experience-page-pixel-layer,
+  .project-page-pixel-layer {
+    display: none !important;
+  }
 }
