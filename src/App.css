@@ -765,14 +765,14 @@ button,
     pointer-events: auto;
   }
 
-  .about-content {
-    width: 100%;
-    max-width: none;
-    display: block;
-    padding: 1.5rem;
-    background: rgba(0, 0, 0, 0.45);
-    overflow: visible;
-  }
+.about-content {
+  width: 100%;
+  max-width: none;
+  display: block;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 18px;
+}
 
   .about-text {
     width: 100%;
@@ -784,7 +784,22 @@ button,
   }
 
   .about-card {
-    transform: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+    transform: none !important;
+  }
+
+  .about-card .pc-card-wrapper {
+    width: min(280px, 100%) !important;
+    max-width: 280px !important;
+  }
+
+  .about-card .pc-card {
+    width: 100% !important;
+    height: 420px !important;
+    max-height: 500px !important;
   }
 
   .project-card {
@@ -812,14 +827,27 @@ button,
       linear-gradient(180deg, #07070d 0%, #050505 100%) !important;
   }
 
+  .about,
   .projects-section,
-  .experience-section,
-  .project-section {
-    padding-top: 10rem;
+  .project-section,
+  .experience-section {
+    padding: 8rem 6vw 4rem;
   }
 
-  .highlight {
-    background: rgba(120, 90, 255, 0.38);
+  .experience-inner {
+    width: 100%;
+    max-width: none;
+    padding: 1.5rem;
+  }
+
+  .experience-card {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .experience-bullets {
+    padding-left: 1.1rem;
   }
 
   .cv-button {
