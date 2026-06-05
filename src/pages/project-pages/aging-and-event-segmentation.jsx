@@ -41,7 +41,7 @@ export default function AgingAndEventSegmentation() {
             </p>
 
             <section className="project-section-block project-abstract">
-              <h2>Abstract</h2>
+              <h2>Introduction</h2>
 
               <p>
                 Humans naturally divide continuous experiences into meaningful events.
@@ -68,7 +68,7 @@ export default function AgingAndEventSegmentation() {
             </section>
 
             <section className="project-section-block">
-              <h2>Figure / Visualization</h2>
+              <h2>Figure</h2>
 
               <div className="project-figure-wrapper">
                 <img
@@ -154,7 +154,7 @@ export default function AgingAndEventSegmentation() {
             </section>
 
             <section className="project-section-block">
-              <h2>Research Outcomes</h2>
+              <h2>Project Outcomes</h2>
 
               <ul>
                 <li>
@@ -187,7 +187,7 @@ export default function AgingAndEventSegmentation() {
             </section>
 
             <section className="project-section-block">
-              <h2>Research Significance</h2>
+              <h2>Project Significance</h2>
 
               <p>
                 Understanding how the brain segments continuous experiences into discrete
