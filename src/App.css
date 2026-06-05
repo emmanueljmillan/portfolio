@@ -866,6 +866,15 @@ button,
     transform: none !important;
     margin-top: 2rem;
   }
+
+  .about-card,
+  .about-card .pc-card-wrapper,
+  .about-card .pc-card-shell,
+  .about-card .pc-card,
+  .about-card .pc-inside {
+    pointer-events: none;
+    touch-action: pan-y;
+  }
 }
 
 @media (hover: none) and (pointer: coarse) {
