@@ -33,27 +33,27 @@ const projects = [
     title: "Personal Brain Portfolio Website",
     description:
       "A custom portfolio interface using React, animated backgrounds, and 3D brain-inspired visuals.",
-    image: "/projects/MRI.gif",
+    image: "/projects/portcodingo.gif",
     link: "/projects/my-portfolio",
     tools: ["JavaScript", "React"]
   },
 
   {
-    title: "Project 5",
+    title: "ML Digit Classification",
     description:
-      "Random Description!!!.",
-    image: "/projects/MRIS.gif",
-    link: "#",
-    tools: ["JavaScript", "React"]
+      "Implemented and compared logistic regression, neural networks, and convolutional neural networks for handwritten digit classification using Python and PyTorch.",
+    image: "/projects/digits.gif",
+    link: "/projects/mldigit",
+    tools: ["Python", "Pytorch", "Numpy", ]
   },
 
   {
-    title: "Project 6",
+    title: "Cross-Sections",
     description:
-      "Random Description!!!.",
-    image: "/projects/MRIS.gif",
+      "Wrote a program that read MRI scans and segmented into different slices by different views.",
+    image: "/projects/MRI.gif",
     link: "#",
-    tools: ["JavaScript", "React"]
+    tools: ["Python", "Numpy"]
   },
 
   {

@@ -8,6 +8,7 @@ import MastersThesis from "./pages/project-pages/masters-thesis"
 import AgingAndEventSegmentation from "./pages/project-pages/aging-and-event-segmentation"
 import GenomicSequenceModeling from "./pages/project-pages/genomic-sequence-modeling"
 import MyPortfolio from "./pages/project-pages/my-portfolio"
+import DigitClass from "./pages/project-pages/mldigit"
 
 import "./App.css"
 
@@ -65,6 +66,7 @@ function App() {
           element={<GenomicSequenceModeling />}
         />
         <Route path="/projects/my-portfolio" element={<MyPortfolio />} />
+        <Route path="/projects/mldigit" element={<DigitClass />} />        
       </Routes>
     </BrowserRouter>
   )
