@@ -569,6 +569,12 @@ button,
   margin-top: 0.75rem;
 }
 
+  .projects-page,
+  .experience-page,
+  .project-page {
+    padding-top: 8rem;
+  }
+
 .project-page {
   position: relative;
   min-height: 100vh;
@@ -816,6 +822,12 @@ button,
     min-height: auto;
     padding: 1rem 0 0;
     border-radius: 0 0 18px 18px;
+  }
+
+  .projects-page,
+  .experience-page,
+  .project-page {
+    padding-top: 8rem;
   }
 }
 
