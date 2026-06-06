@@ -9,6 +9,7 @@ import AgingAndEventSegmentation from "./pages/project-pages/aging-and-event-seg
 import GenomicSequenceModeling from "./pages/project-pages/genomic-sequence-modeling"
 import MyPortfolio from "./pages/project-pages/my-portfolio"
 import DigitClass from "./pages/project-pages/mldigit"
+import { Analytics } from "@vercel/analytics/next"
 
 import "./App.css"
 
