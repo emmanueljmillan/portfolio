@@ -74,7 +74,7 @@ function Home() {
             color="#dd94df"
             speed="4s"
           >
-            CV Button!
+            View CV
           </StarBorder>
         </div>
       </div>
