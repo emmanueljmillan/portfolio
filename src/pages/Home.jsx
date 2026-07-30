@@ -43,6 +43,7 @@ function Home() {
             />
           </div>
 
+        <div className = "hero-actions">
           <div className="hero-links">
             <a href="mailto:emmanueljmillan@outlook.com">
               <MdEmail />
@@ -76,6 +77,7 @@ function Home() {
           >
             View CV
           </StarBorder>
+          </div>
         </div>
       </div>
 
